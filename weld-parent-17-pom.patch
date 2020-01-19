@@ -1,0 +1,27 @@
+--- pom.xml	2012-03-14 12:53:03.787000423 +0100
++++ pom-work.xml	2012-03-14 12:53:27.570000234 +0100
+@@ -112,24 +112,6 @@
+             <groupId>org.codehaus.mojo</groupId>
+             <artifactId>buildnumber-maven-plugin</artifactId>
+          </plugin>
+-         <plugin>
+-            <artifactId>maven-remote-resources-plugin</artifactId>
+-            <version>1.1</version>
+-            <executions>
+-               <execution>
+-                  <id>attach-license</id>
+-                  <goals>
+-                     <goal>process</goal>
+-                  </goals>
+-                  <inherited>true</inherited>
+-                  <configuration>
+-                     <resourceBundles>
+-                        <resourceBundle>org.jboss.weld:weld-license:1</resourceBundle>
+-                     </resourceBundles>
+-                  </configuration>
+-               </execution>
+-            </executions>
+-         </plugin>
+ 
+       </plugins>
+       <defaultGoal>package</defaultGoal>
