@@ -1,6 +1,6 @@
 Name:             weld-parent
 Version:          17
-Release:          8%{?dist}
+Release:          9%{?dist}
 Summary:          Parent POM for Weld
 Group:            Development/Libraries
 License:          ASL 2.0
@@ -52,6 +52,9 @@ install -pm 644 pom.xml $RPM_BUILD_ROOT%{_mavenpomdir}/JPP-%{name}.pom
 %doc LICENSE
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 17-9
+- Mass rebuild 2013-12-27
+
 * Thu Jul 18 2013 Michal Srb <msrb@redhat.com> - 17-8
 - Add ASL 2.0 license text
 - Add missing BR: maven-plugin-build-helper, maven-install-plugin
